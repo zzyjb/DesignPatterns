@@ -1,8 +1,8 @@
-package com.picea.designpatterns.strategy;
+package com.picea.designpatterns.strategy.v02;
 
 public class Sorter {
 
-    public static void sort(Dog[] arr) {
+    public static void sort(Comparable[] arr) {
         for (int i = 0; i < arr.length -1; i++) {
             int min = i;
             for (int j = i+1; j < arr.length; j++) {
@@ -15,8 +15,8 @@ public class Sorter {
 
     //sort int
 
-    static void swap(Dog[] arr, int i, int j){
-        Dog temp = arr[i];
+    static void swap(Comparable[] arr, int i, int j){
+        Comparable temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
     }
